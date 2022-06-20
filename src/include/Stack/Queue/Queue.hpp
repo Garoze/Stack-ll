@@ -12,8 +12,8 @@ public:
     void EnQueue(int);
     Node * DeQueue();
     Node * getFront() const;
-    Node * getBack() const;
-    void setBack(Node* n);
+    Node * getRear() const;
+    void setRear(Node* n);
     int peek() const;
     bool isEmpty() const;
     void Debug() const;
