@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "../Node/Node.hpp"
+#include "Node/Node.hpp"
 
 class Queue
 {
