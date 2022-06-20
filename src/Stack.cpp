@@ -21,11 +21,7 @@ void Stack::push(int v)
 
 int Stack::pop()
 {
-    Node * temp = stack.getRear();
-    stack.setRear(temp->prev);
-    temp->prev->next = nullptr;
-    temp->prev = nullptr;
-    return temp->value;
+    return stack.DeQueue()->value;
 }
 
 int Stack::peek() const
