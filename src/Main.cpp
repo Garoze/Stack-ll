@@ -13,10 +13,8 @@ int main()
 
     Stack s(fila);
     s.Debug();
-    int v = s.pop();
+    s.push(50);
     s.Debug();
-
-    std::cout << "Value: " << v << std::endl;
 
     return EXIT_SUCCESS;
 }

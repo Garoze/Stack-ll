@@ -16,7 +16,7 @@ Stack::Stack(const Queue& q)
 
 void Stack::push(int v)
 {
-    stack.EnQueue(v);
+    stack.setFront(v);
 }
 
 int Stack::pop()

@@ -32,6 +32,27 @@ Node * Queue::DeQueue()
     return temp;
 }
 
+void Queue::setFront(int v)
+{
+    Node * temp = new Node(v);
+
+    if (isEmpty())
+    {
+        front = temp;
+    }
+    else
+    {
+        front->prev = temp;
+        temp->next = front;
+        front = temp;
+    }
+}
+
+void Queue::setRear(Node* n)
+{
+    rear = n;
+}
+
 Node * Queue::getFront() const
 {
     return front;
@@ -40,11 +61,6 @@ Node * Queue::getFront() const
 Node * Queue::getRear() const
 {
     return rear;
-}
-
-void Queue::setRear(Node* n)
-{
-    rear = n;
 }
 
 int Queue::peek() const

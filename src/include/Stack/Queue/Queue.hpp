@@ -11,9 +11,12 @@ public:
 
     void EnQueue(int);
     Node * DeQueue();
+
+    void setFront(int);
+    void setRear(Node*);
     Node * getFront() const;
     Node * getRear() const;
-    void setRear(Node* n);
+
     int peek() const;
     bool isEmpty() const;
     void Debug() const;
